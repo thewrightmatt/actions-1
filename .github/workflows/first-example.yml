@@ -9,6 +9,12 @@ jobs:
             - name: Welcome message
               run: echo "Github Actions test"
 
+            - name: Checkout repo
+              uses: actions/checkout@v4
+
+            - name: pwd
+              run: pwd
+
             - name: List files
               run: ls
 
