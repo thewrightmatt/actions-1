@@ -12,14 +12,11 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v4
 
-            - name: Install cowsay
-              run: sudo apt-get install cowsay -y
-
-            - name: Execute cowsay
-              run: cowsay -f dragon "Thar be dragons" >> dragon.txt
-
-            - name: cat dragon.txt
-              run: cat dragon.txt
+            - name: ls files
+              run: ls -ltra
+            
+            - name: Execut script
+              run: ./ascii-script.sh
 
             - name: PWD
               run: pwd
