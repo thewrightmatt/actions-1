@@ -15,8 +15,10 @@ jobs:
             - name: ls files
               run: ls -ltra
             
-            - name: Execut script
-              run: ./ascii-script.sh
+            - name: Execute script
+              run: |
+                chmod u+x ascii-script.sh
+                ./ascii-script.sh
 
             - name: PWD
               run: pwd
